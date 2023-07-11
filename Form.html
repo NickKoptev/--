@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Форма</title>
+<link rel="stylesheet" href="CSS/CSS.css">
+        <script defer src="Scripts/Script1.js"></script>
+
+
+        <style>
+#navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 2px solid #17f13c;
+  border-radius: 20px 5px;
+  width: 900px;
+  text-align: center;
+  background-color: #0cc94b;
+}
+#navbar li { display: inline; }
+#navbar a {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+#navbar a:hover {
+  border-radius: 20px 5px;
+  background-color: #0066FF;
+} 
+        </style>
+
+    <body>
+    
+    <body bgcolor="aeebae">
+
+
+
+        <h5 align=left> <B>Коптев Н.Е ИЗ-21</B><br>
+        <U>Лабораторная работа "Мировые ИС"</U> </h5>
+        <hr>
+
+        <Center>
+        <ul id="navbar">
+            <li><a href="Main.html"> Главное меню</a></li>
+            <li><a href="url2.html"> Товары</a></li> 
+            <li><a href="url3.html"> Главный слоган</a></li> 
+            <li><a href="url5.html"> О нас</a></li>
+            <li><a href="url6.html"> Обо мне</a></li>
+            <li><a href="table.html"> Таблицы</a></li>
+            <li><a href="Form.html"> Форма</a></li>   
+            
+        </ul>
+    </Center>
+        <hr>
+</head>
+<body>
+<form action="action_form.php" method="POST">
+    <p>Имя: <br> <input type="text" name="firstname" value=""><br></p>
+    <p>Фамилия:<br>  <input type="text" name="lastname" value=""><br></p>
+    <p>Ваш логин:<br> 
+        <input type="text" name="login"  maxlength="30" value="">  
+        </p> 
+        <p>Пароль:<br> <input type="password" name="password"  maxlength="30">  
+        </p>
+    <p>Сколько Вам лет?</p>
+  <ol>
+    <li><input type="radio" name="age" value="18" checked>младше 18</li>
+    <li><input type="radio" name="age" value="18-24">от 18 до 24</li>
+    <li><input type="radio" name="age" value="25-34">от 25 до 35</li>
+    <li><input type="radio" name="age" value="35-50">более 35</li>
+  </ol>
+  <fieldset>
+    <legend>Контактная информация</legend>
+    <label>Email:<br><input type="text" name="email"></label><br>
+    <label>Мобильный:<br><input type="text" name="mobile"></label><br>
+    <label>Факс:<br><input type="text" name="fax"></label><br>
+    <label>Ваша страна:<br><input type="text" name="country"></label><br>
+    <label>Ваш город:<br><input type="text" name="city"></label><br>
+  </fieldset>
+  <input type="submit">
+  </p>
+</form>
+</body>
+</html>      
